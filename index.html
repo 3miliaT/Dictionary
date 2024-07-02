@@ -7,16 +7,21 @@
 </head>
 <body>
     <h1>Dictionary</h1>
+    
+    <div>
+        <h2>Add a New Word</h2>
+        <input type="text" id="newWord" placeholder="Enter word">
+        <button onclick="addWord()">Add Word</button>
+    </div>
 
-    <h2>Add a New Word</h2>
-    <input type="text" id="new-word" placeholder="Enter new word">
-    <button onclick="addWord()">Add Word</button>
-
-    <h2>Search for a Word</h2>
-    <input type="text" id="search-word" placeholder="Enter word to search">
-    <button onclick="searchWord()">Search</button>
-    <p id="search-result"></p>
-
-    <script src="script.js"></script>
+    <div>
+        <h2>Search for a Word</h2>
+        <input type="text" id="searchWord" placeholder="Enter word">
+        <button onclick="searchWord()">Search Word</button>
+    </div>
+    
+    <div id="message"></div>
+    
+    <script src="dictionary.js"></script>
 </body>
 </html>
